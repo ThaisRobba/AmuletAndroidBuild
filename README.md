@@ -21,15 +21,29 @@ minSdk 14 means we pretty much cover every device available.
 
 # Dependencies
 
-On the app build.gradle, we add two dependencies:
+On the app build.gradle, we need three dependencies:
 
 Google Play services - was getting errors with 'version not found' but 12.0.1 does the trick.
 
     implementation 'com.google.android.gms:play-services:12.0.1'
-    
+
+In order to build with Gradle from the commandline, we need to be able to run tests
+
+    testImplementation 'junit:junit:4.12'
+
 Multidex - this is required to build APKs as we go beyond the methods limit. Oh well.
 
     implementation 'com.android.support:multidex:1.0.3'
+
+Final dependencies look like this:
+
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+        testImplementation 'junit:junit:4.12'
+        implementation 'com.google.android.gms:play-services:12.0.1'
+        implementation 'com.android.support:multidex:1.0.3'
+    }
+
 
 ## Multidex
 

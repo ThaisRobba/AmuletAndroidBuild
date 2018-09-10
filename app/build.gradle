@@ -20,6 +20,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
     implementation 'com.google.android.gms:play-services:12.0.1'
     implementation 'com.android.support:multidex:1.0.3'
 }
