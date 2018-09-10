@@ -4,7 +4,6 @@ import android.app.PendingIntent;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.os.Looper;
 import android.util.Log;
 import android.view.WindowManager;
 import android.content.*;
@@ -16,7 +15,7 @@ import android.view.*;
 import android.graphics.Color;
 import android.widget.*;
 
-import android.util.DisplayMetrics;
+//import android.util.DisplayMetrics;
 
 import javax.microedition.khronos.egl.EGL10;
 import javax.microedition.khronos.egl.EGLConfig;
