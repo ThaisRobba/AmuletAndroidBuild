@@ -6,6 +6,7 @@ android {
         applicationId "xyz.amulet"
         minSdkVersion 14
         targetSdkVersion 28
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
     }
@@ -20,4 +21,5 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.google.android.gms:play-services:12.0.1'
+    implementation 'com.android.support:multidex:1.0.3'
 }
