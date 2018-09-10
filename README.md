@@ -2,15 +2,15 @@
 
 Creating an Android Project for building .apks from Amulet involved a few steps in relation to dependencies.
 
-Since my memory is terrible, I've written up what was done to get the builds going.
+I've written up what was done to get the builds working since my memory is terrible.
 
 # Project
 
-I created a Project without an activity, name and path `xyz.amulet`
+I created a Project without an activity. For the name and path I used `xyz.amulet`.
 
 # minSdk, targetSdk
 
-I used:
+On the app build.graddle, I used:
 
     minSdkVersion 14
     targetSdkVersion 28
